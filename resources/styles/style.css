@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
-
 :root {
   --primary: #072ac8;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color:#f2f4fc;
 }
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -28,83 +26,140 @@ img {
 /* ------ CIRCULAR ANIMATION ------ */
 
 /* Your CSS code goes here */
-
 /* ------------------------------ Navbar ------------------------------ */
 
-/* Your CSS code goes here */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
 
-/* ------------------------------ Header ------------------------------ */
+#circlenav {
+  display: flex;
+  height: 40px;
+  width: 100px;
+  top: 0%;
+}
 
-/* Your CSS code goes here */
+#navlist ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+  list-style: none;
+}
 
+.contactus {
+  background-color:#072ac8; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.contactus:hover {
+  background-color: #414247;
+  cursor: pointer;
+}
+
+/* ------------------------------   SECTION 1 ------------------------------ */
+
+#sec1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1{
+  font-size: 40px;
+ }
+
+.greytext {
+  color: grey;
+}
+
+#img1 {
+  width: auto;
+  height: auto;
+}
+
+.getintouch {
+  background-color:#072ac8; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.getintouch:hover {
+  background-color: #414247;
+  cursor: pointer;
+}
+
+.seeourwork {
+  background-color: transparent; 
+  border: none;
+  color: gray;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.seeourwork:hover {
+  cursor: pointer;
+}
 /* ------------------------------ Partners ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Recent projects ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Client reviews ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Services ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Questions form ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Footer ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
 /* -------------------------------------------------------------------------- */
-
 /* ------------------------------ Project main ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
-
 /* ------------------------------ Form ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
-
 /* Your CSS code goes here */
-
 /* --------------------------------------------------------------------------- */
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
 /* --------------------------------------------------------------------------- */
-
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
 @media (max-width: 990px) {
   /* Your CSS code goes here */
 }
-
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   /* Your CSS code goes here */
 }
-
 /* ------------------------------ Hamburguer menu ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Alert ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Sticky scroll bar ------------------------------ */
-
 /* Your CSS code goes here */
