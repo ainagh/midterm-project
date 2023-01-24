@@ -116,10 +116,11 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 #### Day Two
 
+###### Martes 24, Enero 2023
+
 - [ ] Crear CSS de la sección "Home Page"
 - [ ] Crear CSS de la sección "Contact Us"
 
-###### Martes 24, Enero 2023
 
 #### Day Three
 
