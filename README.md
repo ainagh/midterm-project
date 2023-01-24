@@ -104,16 +104,20 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 
 #### Day One
 
-#### Day One
-
 ###### Lunes 23, Enero 2023
 
-- [ ] Tarea no completada
+<!-- - [ ] Tarea no completada
 - [x] Tarea Completada
 - [ ] Ej - Crear section "projects" en html
-- [x] Ej - Crear section "projects" en html
+- [x] Ej - Crear section "projects" en html -->
+- [x] Crear html de la sección "Home Page"
+- [x] Crear html de la sección "Recent Projects"
+- [x] Crear html de la sección "Contact Us"
 
 #### Day Two
+
+- [ ] Crear CSS de la sección "Home Page"
+- [ ] Crear CSS de la sección "Contact Us"
 
 ###### Martes 24, Enero 2023
 
