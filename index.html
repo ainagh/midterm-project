@@ -24,22 +24,29 @@
       </nav>
     </header>
    <!-----------section1---------->
-    <section>
-      <div id="sec1">
+    <section id="section1">
+      <div id="sec1text">
         <h1>Empower Your Business With Stunning Design!</h1>
+        <br>
         <p class="greytext">Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-        
+        <br>
+        <div id="buttons">
+          <p class="seeourwork"> See our work
+          </p>
           <button class="getintouch">Get in touch</button>
-          <button class="seeourwork">See our work</button> 
-        
+        </div>
       </div>
-      <div id="img1">
-        <img src="./resources/images/hero-section/hero-image.png" alt="foto chico">
+      <div id="images-3">
+        <img class="card1" src="./resources/images/hero-section/card-1.png" alt="">
+
+        <img class="img1" src="./resources/images/hero-section/hero-image.png" alt="foto chico">
+        
+        <img class="card2" src="./resources/images/hero-section/card-2.png" alt="">
       </div>
     </section>
     <!-----------section2---------->
-    <section>
-      <div>
+    <section id="section2">
+      <div class="logos">
         <div><img src="./resources/images/logos/airbnb-logo.svg" alt="logo airbnb"></div>
         <div><img src="./resources/images/logos/google-logo.svg" alt="logo google"></div>
         <div><img src="./resources/images/logos/microsoft-logo.svg" alt="logo microsoft"></div>
@@ -48,46 +55,61 @@
       </div>
     </section>
     <!-----------section3---------->
-    <section>
+    <section id="section3">
       <h2>Recent Projects</h2>
       <div>
         <div>
-          <img src="./resources/images/projects-section/1.jpg" alt="imgpro1">
+          <div id="bigimg">
+            <img src="./resources/images/projects-section/1.jpg" alt="imgpro1">
+          </div>
           <h1>Simplify</h1>
           <div>UI Design & App Development</div>
           <a href="#">Learn More</a>
         </div>
         <div>
-          <img src="./resources/images/projects-section/2.jpg" alt="imgpro2">
+          <div id="bigimg">
+            <img src="./resources/images/projects-section/2.jpg" alt="imgpro2">
+          </div>
           <h1>Dashcoin</h1>
           <div>Web Development</div>
           <a href="#">Learn More</a>
         </div>
         <div>
-          <img src="./resources/images/projects-section/3.jpg" alt="imgpro3">
+          <div id="bigimg">
+           <img src="./resources/images/projects-section/3.jpg" alt="imgpro3">
+          </div>
           <h1>Vectorify</h1>
           <div>User Experience Design</div>
           <a href="#">Learn More</a>
         </div>
       </div>
     </section>
+    <!-- HASTA AQUÍ AINA -->
     <!-----------section4---------->
-    <section>
-      <div>
+    <section class="section4" >
+      <div class="container4">
         <h2>Hear What Our Clients Have to Say</h2>
-      </div>
+        <h3>"Circle helped us through every stage of our startup. <br>
+          We really enjoyed working with you."</h3>
       <div>
-        <h3>"Circle helped us through every stage of our startup. We really enjoyed working with you."</h3>
+        <img src="./resources/images/testimonial-section/profile.png" alt="fotoKristen">
+        <div class="TestimonialName">
+          <h4>Kristin Watson</h4>
+          <div>Booking.com</div>
+        </div>
       </div>
-      <div>
-        <img src="" alt="">
-        <div>name</div>
-      </div>
+    </div>
+    <span><div class ="containerimg">
+      <img src="./resources/images/testimonial-section/memoji-1.png" alt="memoji1">
+      <img src="./resources/images/testimonial-section/memoji-2.png" alt="memoji2">
+      <img src="./resources/images/testimonial-section/memoji-3.png" alt="memoji3">
+      <img src="./resources/images/testimonial-section/memoji-4.png" alt="memoji4">
+    </div></span>
     </section>
     <!-----------section5---------->
-    <section>
+    <section class="section5">
       <h2>Our Services</h2>
-      <div>
+      <div class="container5">
         <div>
           <img src="./resources/images/services-section/icons/1.svg" alt="icono 1">
           <h2>User Interface Design</h2>
@@ -109,26 +131,27 @@
       </div>
     </section>
     <!-----------section6---------->
-    <section>
-      <h3>Do you have any questions?</h3>
-      <h5>Let us help you!</h5>
-      <div>
-      <div>
-        <input type="text">
-        <img src="./resources/images/newsletter/icon/mail.svg" alt="email icon">
+    <section class="section6">
+      <div class="container6">
+        <h3>Do you have any questions?</h3>
+        <h5>Let us help you!</h5>
+        <div class="input">
+          <img src="./resources/images/newsletter/icon/mail.svg" alt="email icon">
+        <input type="text" placeholder="Enter your email" >
+        <button>Suscribe</button>
       </div>
-      <div>
-      <button>suscribe</button>
       </div>
     </section>
     <!-----------Fotter---------->
     <footer>
       <section>
-       <div><img src="./resources/images/logos/circle.svg" alt="Circle logo"></div>
-       <div>2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</div>
-      </section>
-      <section>
-       <ul>
+      <div class="containerFotter">
+        <div class="container1">
+        <img src="./resources/images/logos/circle.svg" alt="Circle logo">
+        <div>2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</div>
+        </div>
+       
+        <ul class="container2-grid">
          <li><a href="#">Team</a></li>
          <li><a href="#">Services</a></li>
          <li><a href="#">About Us</a></li>
@@ -136,6 +159,8 @@
          <li><a href="#">Projects</a></li>
          <li><a href="#">Privacy Policy</a></li>
        </ul>
+      </div>
+      </div>
      </section>
    </footer>
   </body>

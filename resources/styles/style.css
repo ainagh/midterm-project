@@ -6,10 +6,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:#f2f4fc;
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color:#f2f4fc;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -17,11 +17,6 @@ body {
 /* ------------------------------------------------------------------------ */
 
 /* ------------------------------ Splash page ------------------------------ */
-
-img {
-  height: 200px;
-  width: 200px;
-}
 
 /* ------ CIRCULAR ANIMATION ------ */
 
@@ -33,13 +28,17 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  margin: 5%;
 }
 
 #circlenav {
   display: flex;
-  height: 40px;
-  width: 100px;
+  height: 20px;
   top: 0%;
+}
+
+#circlenav:hover {
+cursor: pointer;
 }
 
 #navlist ul {
@@ -49,9 +48,33 @@ nav {
   text-align: center;
   gap: 1rem;
   list-style: none;
+  font-size: 17px;
+  font-weight: 500;
 }
 
-.contactus {
+#navlist a{
+  text-decoration: none;
+}
+
+/* #navlist a:nth-child(1) {
+  color: #0082f3;
+ }
+
+#navlist a:nth-child(2) {
+  color: #6b708d;
+ }
+ 
+#navlist a:nth-child(3) {
+  color: #6b708d;
+ }
+  */
+/* #navlist:hover{
+  color: #072ac8;
+  cursor: pointer;
+} */
+
+/*----------COMPROBAR-----------*/
+/* .contactus {
   background-color:#072ac8; 
   border: none;
   color: white;
@@ -60,7 +83,7 @@ nav {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-}
+} */
 
 .contactus:hover {
   background-color: #414247;
@@ -69,28 +92,50 @@ nav {
 
 /* ------------------------------   SECTION 1 ------------------------------ */
 
-#sec1 {
+/* #section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+#section1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 10%;
+  justify-content: end;
+  gap: 100px;
+}
+
+#sec1text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 8%;
 }
 
 h1{
-  font-size: 40px;
+  font-size: 55px;
+  color: #292e47;
  }
 
 .greytext {
-  color: grey;
+  color: #6b708d;
+  font-size: 20px;
+  line-height: 150%;
 }
 
-#img1 {
-  width: auto;
-  height: auto;
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.getintouch {
+/*----------COMPROBAR-----------*/
+
+/* .getintouch {
   background-color:#072ac8; 
   border: none;
   color: white;
@@ -100,30 +145,77 @@ h1{
   display: inline-block;
   font-size: 16px;
 }
-
+ */
 .getintouch:hover {
   background-color: #414247;
   cursor: pointer;
 }
 
 .seeourwork {
-  background-color: transparent; 
-  border: none;
-  color: gray;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  padding: 15px 0px;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .seeourwork:hover {
   cursor: pointer;
 }
+
+#images-3 {
+  position: relative;
+}
+
+.img1 {
+  height: 540px;
+}
+
+.card1 {
+  height: 50%;
+  width: 35%;
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  z-index: 1;
+}
+
+.card2 {
+  height: 50%;
+  width: 38%;
+  position: absolute;
+  bottom: -90px;
+  right: 60px;
+  z-index: 1;
+}
+
 /* ------------------------------ Partners ------------------------------ */
-/* Your CSS code goes here */
+#section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+
 /* ------------------------------ Recent projects ------------------------------ */
-/* Your CSS code goes here */
+#bigimg img{
+  height: 50px;
+  width: 50px;
+}
+
+#section3 {
+  display: flex;
+}
+
+
 /* ------------------------------ Client reviews ------------------------------ */
 /* Your CSS code goes here */
 /* ------------------------------ Services ------------------------------ */
