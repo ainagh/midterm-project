@@ -20,11 +20,6 @@ body {
 
 /* ------------------------------ Splash page ------------------------------ */
 
-img {
-  height: 200px;
-  width: 200px;
-}
-
 /* ------ CIRCULAR ANIMATION ------ */
 
 /* Your CSS code goes here */
@@ -50,16 +45,94 @@ img {
 /* Your CSS code goes here */
 
 /* ------------------------------ Services ------------------------------ */
-
-/* Your CSS code goes here */
-
+.section5 {
+  background-color: gainsboro;
+  height: 700px;
+}
+.services-container-out {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  gap: 30px;
+  align-content: center;
+}
+.services-container-in {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  align-items: center;
+  align-content: center;
+  gap: 30px;
+}
+.services-container-in div {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-between;
+  padding: 30px;
+}
 /* ------------------------------ Questions form ------------------------------ */
 
-/* Your CSS code goes here */
+.section6 {
+  background-color: #ffc600;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 500px;
+  gap: 40px;
+}
 
+.grupoInput img {
+  height: 16px;
+}
+input {
+  height: 45px;
+  width: 400px;
+  border: 0.1px solid var(--primary);
+  position: relative;
+  /* margin-top: 40px; */
+  padding: 20px;
+}
+
+button {
+  height: 45px;
+  padding: auto;
+  width: 100px;
+  border-radius: 0;
+  border-style: none;
+  background-color: #072ac8;
+  color: white;
+}
 /* ------------------------------ Footer ------------------------------ */
 
-/* Your CSS code goes here */
+.fotter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  height: 300px;
+}
+.fotter img {
+  padding: 30px;
+}
+
+.list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 20px;
+}
 
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
