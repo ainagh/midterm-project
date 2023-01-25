@@ -233,6 +233,7 @@ nav {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }
 #box1 img,
@@ -364,7 +365,7 @@ nav {
   background-color: #fafafa;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   gap: 45px;
   padding: 40px;
   align-items: flex-start;
@@ -401,7 +402,7 @@ nav {
 .input {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 10px;
   align-items: center;
 }
@@ -441,7 +442,6 @@ nav {
   height: 30px;
   margin-bottom: 20px;
 }
-
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
 /* -------------------------------------------------------------------------- */
@@ -469,6 +469,10 @@ nav {
   width: 100%;
 }
 
+a:visited {
+  color: var(--primary);
+}
+
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
@@ -481,13 +485,94 @@ nav {
 /* --------------------------------------------------------------------------- */
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
 /* --------------------------------------------------------------------------- */
-/* ------------------------- Smaller than 990px (tablet) ------------------------- */
-@media (max-width: 990px) {
-  /* Your CSS code goes here */
-}
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
-  /* Your CSS code goes here */
+  * {
+    font-size: 17px;
+  }
+  a {
+    font-size: 15px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  .input {
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+  }
+  .input img {
+    left: 0px;
+    top: 15px;
+    height: 20px;
+  }
+  .input input {
+    width: 100%;
+    border: none;
+    font-size: 15px;
+  }
+  .container6 button {
+    width: 100%;
+  }
+  .container6 {
+    margin: 40px;
+    padding: 0px;
+  }
+  .containerFooter {
+    flex-direction: column;
+    text-align: center;
+    margin: 24px;
+  }
+  .containerFooter img {
+    height: 25px;
+  }
+  .container2-grid {
+    gap: 8px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .section1,
+  .section2 {
+    margin: 40px;
+    gap: 25px;
+    line-height: 27px;
+  }
+  .container-project {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #box1 img,
+  .container2 img {
+    height: 240px;
+    width: 320px;
+  }
+
+  .section5 {
+    margin: 98px 29px 98px 29px;
+  }
+  .container5 div {
+    width: none;
+  }
+  #box1,
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerimg {
+    display: none;
+  }
+  .container4 h3 {
+    width: 120%;
+  }
 }
 /* ------------------------------ Hamburguer menu ------------------------------ */
 /* Your CSS code goes here */
