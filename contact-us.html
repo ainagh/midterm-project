@@ -10,6 +10,23 @@
 <body>
 <style>
 
+/*  ------------ HAMBURGUER ------------- */
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 #form {
   margin: 150px;
 }
@@ -21,14 +38,6 @@
   margin-top: 50px;
   color: #6b708d;
 }
-
-/* .email-phone-text {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 20px;
-} */
 
 .email-phone {
   display: flex;
@@ -79,6 +88,53 @@ textarea::placeholder {
 .submit-button {
   width: 100%;
 }
+
+/* ------------------------- Smaller than 766px (mobile) ------------------------- */
+@media (max-width: 766px) {
+  
+  #form {
+  margin: 30px;
+}
+
+.email-phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.email-phone label {
+  width: 100%;
+}
+
+
+/*  ------------ HAMBURGUER RESPONSIVE ------------- */
+
+.hamburguer {
+  display: block;
+
+ }
+
+#navlist {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #c8c8c8;
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+ }
+
+ #navlist li {
+  margin: 16px 0;
+ }
+
+#navlist.active {
+  left: 0;
+}
+
+}
 </style>
 
   <header>
@@ -87,13 +143,18 @@ textarea::placeholder {
       <div id="circlenav">
       <img src="./resources/images/logos/circle.svg" alt="Circle logo">
       </div>
-      <div id="navlist"><ul>
+      <div id="navlist">
         <li><a href="#">Home</a></li>
         <br>
         <li><a href="#" active>Projects</a></li>
         <br>
         <li><a href="#">Services</a></li>
       </ul></div>
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <button class="contactus">Contact Us</button>
     </nav>
   </header>
