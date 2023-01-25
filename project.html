@@ -5,82 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recent Projects</title>
+    <link rel="stylesheet" href="./resources/styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-          <div id="circle-nav">
-            <img src="./resources/images/logos/circle.svg" alt="Circle logo">
-          </div>          
-          <div><ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-          </ul></div>
-          <button>Contact Us</button>
-        </nav>
-      </header>
+  <header>
+    <nav>
+      <div id="circlenav">
+      <img src="./resources/images/logos/circle.svg" alt="Circle logo">
+      </div>
+      <div id="navlist">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <br>
+        <li><a href="#">Projects</a></li>
+        <br>
+        <li><a href="#">Services</a></li>
+      </ul></div>
+      <button class="contactus">Contact Us</button>
+    </nav>
+  </header>
       <!-- ----------------- SECTION 1 ------------------->
-      <section>
+      <section class="section1">
         <div>
             <h1>Simplify</h1>
             <p>UI Design & App Development</p>
             <p>Completed on 2/2/22</p>
         </div>
-        <div>
-            <img src="./resources/images/projects-section/1.jpg" alt="">
-        </div>
-        <div>
-            <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus.
-
+        <div class="mainProject"></div>
+        <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus. <br>
+<br>
             Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
-        </div>
+        
       </section>
       <!-- ----------------- SECTION 2 ------------------->
-      <section>
+      <section class="section2">
         <h2>Other Projects</h2>
-        <div>
+        <div class="container2">
+          <div>
             <img src="./resources/images/projects-section/2.jpg" alt="">
             <h3>Dashcoin</h3>
             <p>Web Development</p>
             <p><a href="#">Learn More</a></p>
-        </div>
-        <div>
+          </div>
+          <div>
             <img src="./resources/images/projects-section/3.jpg" alt="">
             <h3>Vectorify</h3>
             <p>User Experience Design</p>
             <p><a href="#">Learn More</a></p>
-        </div>
+           </div>
         <div>
             <img src="./resources/images/projects-section/4.jpg" alt="">
             <h3>Orbit</h3>
             <p>UI Desing</p>
             <p><a href="#">Learn More</a></p>
         </div>
+      </div>
       </section>
-    <!-- ----------------- SECTION 3 ------------------->
-      <section>
-        <div>
-            <h3>Do you have any questions?</h3>
-            <p>Let us help you!</p>
-        </div>
-        <div>
-            <input type="text">
-            <img src="./resources/images/newsletter/icon/mail.svg" alt="Email envelope">
-        </div>
-        <div>
-            <button>Suscribe</button>
-        </div>  
-      </section>
+          <!-----------section6---------->
+          <section class="section6">
+            <div class="container6">
+              <h2>Do you have any questions?</h2>
+              <h5>Let us help you!</h5>
+              <div class="input">
+                <img src="./resources/images/newsletter/icon/mail.svg" alt="email icon">
+              <input type="text" placeholder="Enter your email" >
+              <button>Suscribe</button>
+            </div>
+            </div>
+          </section>
       <!-- ----------------- FOOTER ------------------->
       <footer>
         <section>
-             <div><img src="./resources/images/logos/circle.svg" alt="Circle logo">
-             </div>
-             <div>2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</div>
-        </section>
-        <section>
-         <ul>
+        <div class="containerFooter">
+          <div class="container1">
+          <img src="./resources/images/logos/circle.svg" alt="Circle logo">
+          <div>2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</div>
+          </div>
+         
+          <ul class="container2-grid">
            <li><a href="#">Team</a></li>
            <li><a href="#">Services</a></li>
            <li><a href="#">About Us</a></li>
@@ -88,6 +90,8 @@
            <li><a href="#">Projects</a></li>
            <li><a href="#">Privacy Policy</a></li>
          </ul>
+        </div>
+        </div>
        </section>
      </footer>
 
