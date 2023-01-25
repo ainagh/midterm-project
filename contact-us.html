@@ -8,6 +8,126 @@
     <link rel="stylesheet" href="./resources/styles/style.css">
 </head>
 <body>
+<style>
+
+#form {
+  margin: 150px;
+}
+
+.allform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  color: #6b708d;
+}
+
+.email-phone {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.email-phone label {
+  width: 50%;
+}
+
+input {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+::placeholder {
+  color: #6b708d;
+}
+
+textarea {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.submit-button:hover {
+  background-color: #292e47;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+}
+
+/* ------------------------- Smaller than 766px (mobile) ------------------------- */
+@media (max-width: 766px) {
+  #form {
+  margin: 30px;
+}
+
+.allform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  color: #6b708d;
+}
+
+input {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+::placeholder {
+  color: #6b708d;
+}
+
+textarea {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.submit-button:hover {
+  background-color: #292e47;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+}
+
+
+}
+</style>
+
   <header>
     <!-- ------------------- NAV BAR ---------------- -->
     <nav>
@@ -17,7 +137,7 @@
       <div id="navlist"><ul>
         <li><a href="#">Home</a></li>
         <br>
-        <li><a href="#">Projects</a></li>
+        <li><a href="#" active>Projects</a></li>
         <br>
         <li><a href="#">Services</a></li>
       </ul></div>
@@ -26,20 +146,20 @@
   </header>
   <!-- ------ SECTION 1 FORM ------ -->
   <section id="form">
-    <h1>Contact Us</h1>
-    <div class="form1">
+    <h2 class="title">Contact Us</h2>
+    <div class="allform">
       <label class="formLabel" for="yourName">Full Name *</label>
-      <input class="formLabel" type="text" id="yourName" placeholder="Enter your full name" />
-    </div>
-    <div class="form1">
-      <label class="formLabel" for="yourEmail">Email</label>
+      <input class="formLabel" type="text" id="yourName" placeholder="Enter your full name"/>
+
+      <div class="email-phone">
+      <label class="formLabel" for="yourEmail">Email
       <input type="email" id="yourEmail" placeholder="Enter your email" />
-    </div>
-    <div class="form1">
-      <label class="formLabel" for="yourPhone">Phone</label>
-      <input  type="number" id="yourPhone" placeholder="Enter your phone" />
-    </div>
-    <div class="form1">
+      </label>
+      <label class="formLabel" for="yourPhone">Phone
+      <input  type="text" id="yourPhone" placeholder="Enter your phone" />
+      </label>
+      </div>
+     
       <label class="formLabel" for="yourMessage">Message *</label>
       <textarea name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
   </div>
@@ -69,5 +189,6 @@
     </div>
    </section>
  </footer>
+ <script src="./resources/js/contact.js"></script>
 </body>
 </html>
