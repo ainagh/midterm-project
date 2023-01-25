@@ -1,105 +1,447 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto:wght@100;300;400;500&display=swap");
-
 :root {
   --primary: #072ac8;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f2f4fc;
 }
-
+button {
+  background-color: #072ac8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  font-size: 17px;
+}
+h1 {
+  font-size: 55px;
+  color: #292e47;
+}
+h2 {
+  font-weight: 600;
+  color: #292e47;
+  font-size: 40px;
+}
+h3 {
+  font-weight: 500;
+  color: #292e47;
+  font-size: 24px;
+}
+h5 {
+  font-weight: 400;
+  color: #6b708d;
+  font-size: 18px;
+}
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
-/* ------------------------------------------------------------------------ */
-
-/* ------------------------------ Splash page ------------------------------ */
 
 /* ------ CIRCULAR ANIMATION ------ */
 
 /* Your CSS code goes here */
-
 /* ------------------------------ Navbar ------------------------------ */
 
-/* Your CSS code goes here */
-
-/* ------------------------------ Header ------------------------------ */
-
-/* Your CSS code goes here */
-
-/* ------------------------------ Partners ------------------------------ */
-
-/* Your CSS code goes here */
-
-/* ------------------------------ Recent projects ------------------------------ */
-
-/* Your CSS code goes here */
-
-/* ------------------------------ Client reviews ------------------------------ */
-
-/* Your CSS code goes here */
-
-/* ------------------------------ Services ------------------------------ */
-.section5 {
-  background-color: gainsboro;
-  height: 700px;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 5%;
 }
-.services-container-out {
-  margin: 30px;
+#navlist a {
+  color: #414247;
+}
+li fir #circlenav {
+  display: flex;
+  height: 20px;
+  top: 0%;
+}
+
+#circlenav:hover {
+  cursor: pointer;
+}
+
+#navlist ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+  list-style: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/* #navlist a{
+  text-decoration: none;
+} */
+
+/* #navlist a:nth-child(1) {
+  color: #0082f3;
+ }
+
+#navlist a:nth-child(2) {
+  color: #6b708d;
+ }
+ 
+#navlist a:nth-child(3) {
+  color: #6b708d;
+ }
+  */
+#navlist a:hover {
+  color: #072ac8;
+  cursor: pointer;
+}
+
+/*----------COMPROBAR-----------*/
+/* .contactus {
+  background-color:#072ac8; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+} */
+
+.contactus:hover {
+  background-color: #414247;
+  cursor: pointer;
+}
+
+/* ------------------------------   SECTION 1 ------------------------------ */
+
+/* #section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+#section1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 10%;
+  justify-content: end;
+  gap: 100px;
+}
+
+#sec1text {
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
-  gap: 30px;
-  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 8%;
 }
-.services-container-in {
+
+.greytext {
+  color: #6b708d;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*----------COMPROBAR-----------*/
+
+/* .getintouch {
+  background-color:#072ac8; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+ */
+.getintouch:hover {
+  background-color: #414247;
+  cursor: pointer;
+}
+
+.seeourwork {
+  padding: 15px 0px;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.seeourwork:hover {
+  cursor: pointer;
+}
+
+#images-3 {
+  position: relative;
+}
+
+.img1 {
+  height: 540px;
+}
+
+.card1 {
+  height: 50%;
+  width: 35%;
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  z-index: 1;
+}
+
+.card2 {
+  height: 50%;
+  width: 38%;
+  position: absolute;
+  bottom: -90px;
+  right: 60px;
+  z-index: 1;
+}
+
+/* ------------------------------ Partners ------------------------------ */
+#section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logos {
   display: flex;
   flex-direction: row;
-  height: 400px;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  align-content: center;
-  gap: 30px;
+  gap: 4rem;
 }
-.services-container-in div {
+
+/* ------------------------------ Recent projects ------------------------------ */
+#bigimg img {
+  height: 50px;
+  width: 50px;
+}
+
+#section3 {
+  display: flex;
+}
+
+/* ------------------------------ SECTION 3 Recent projects ------------------------------ */
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+
+#section3 h2 {
+  font-size: 40px;
+  text-align: left;
+  color: #292e47;
+}
+
+#recent-projects {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: left;
+  line-height: 40px;
+}
+
+#recent-projects h3 {
+  font-size: 22px;
+  color: #292e47;
+}
+
+.text-projects {
+  margin-left: 30px;
+  padding-bottom: 40px;
+}
+
+#box1 {
+  background-color: #fafafa;
+  /* width: 340px;
+  height: 200px; */
+}
+
+.projects {
+  height: 240px;
+  width: 320px;
+}
+/* ------------------------------ Client reviews ------------------------------ */
+.section4 {
+  background-color: #292e47;
+  background-image: url(../images/testimonial-section/orbit.png);
+  background-size: cover;
+  position: relative;
+  padding: 15px;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+}
+.containerimg img:nth-child(1) {
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  height: 140px;
+  width: 140px;
+}
+.containerimg img:nth-child(2) {
+  position: absolute;
+  bottom: 50px;
+  right: 130px;
+  height: 140px;
+  width: 140px;
+}
+.containerimg img:nth-child(3) {
+  position: absolute;
+  bottom: 50px;
+  left: 130px;
+  height: 140px;
+  width: 140px;
+}
+.containerimg img:nth-child(4) {
+  position: absolute;
+  top: 50px;
+  right: 130px;
+  height: 140px;
+  width: 140px;
+}
+.container4 div {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+}
+.container4 h2 {
+  color: white;
+}
+.container4 h3 {
+  color: #ffc600;
+  width: 70%;
+  text-align: center;
+}
+.container4 div img {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  margin: 2px 10px;
+}
+
+.TestimonialName {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 18px;
+}
+.TestimonialName :first-child {
+  color: rgb(119, 201, 230);
+  margin-left: 12px;
+  font-weight: 400;
+  font-size: 17px;
+}
+.TestimonialName :last-child {
+  color: white;
+  margin-left: -22px;
+  font-weight: 400;
+  font-size: 13px;
+}
+/* ------------------------------ Services ------------------------------ */
+.section5 {
+  display: flex;
+  flex-direction: column;
+  margin: 120px 80px 120px 80px;
+  gap: 70px;
+}
+
+.container5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
+.container5 div {
   background-color: white;
   display: flex;
   flex-direction: column;
-  height: 400px;
+  flex-wrap: nowrap;
+  gap: 45px;
+  padding: 40px;
   align-items: flex-start;
+  width: 350px;
   align-content: center;
-  justify-content: space-between;
-  padding: 30px;
+  justify-content: space-evenly;
+  padding-top: 75px;
+}
+.container5 button {
+  color: var(--primary);
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-weight: 550;
 }
 /* ------------------------------ Questions form ------------------------------ */
-
 .section6 {
   background-color: #ffc600;
+  padding: 20px;
+}
+.container6 {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  justify-content: space-evenly;
   align-items: center;
-  align-content: center;
-  justify-content: center;
+  margin: 50px;
   flex-wrap: wrap;
-  height: 500px;
+  align-content: center;
+  padding: 70px;
   gap: 40px;
 }
 
-.grupoInput img {
-  height: 16px;
+.input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
-input {
-  height: 45px;
-  width: 400px;
-  border: 0.1px solid var(--primary);
+
+.container6 input {
+  border: 1px solid #072ac8;
+  height: 50px;
+  width: 393px;
+  padding-left: 50px;
   position: relative;
-  /* margin-top: 40px; */
-  padding: 20px;
+}
+.input img {
+  position: absolute;
+  margin-left: 15px;
+  z-index: 2;
 }
 
 button {
@@ -113,71 +455,83 @@ button {
 }
 /* ------------------------------ Footer ------------------------------ */
 
-.fotter {
+.containerFooter {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  align-content: center;
+  flex-direction: row;
   flex-wrap: wrap;
-  padding: 50px;
-  height: 300px;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px;
+  gap: 30px;
 }
-.fotter img {
-  padding: 30px;
-}
-
-.list {
-  list-style: none;
+.container2-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  padding: 20px;
+  list-style: none;
+  gap: 30px 8px;
+}
+.containerFooter img {
+  height: 30px;
+  margin-bottom: 20px;
 }
 
 /* -------------------------------------------------------------------------- */
 /* ------------------------------ PROJECT html ------------------------------ */
 /* -------------------------------------------------------------------------- */
-
 /* ------------------------------ Project main ------------------------------ */
+.section1,
+.section2 {
+  display: flex;
+  flex-direction: column;
+  margin: 80px;
+  gap: 50px;
+  color: #292e47;
+  font-size: 20px;
+}
+.mainProject {
+  background-image: url(../images/projects-section/1.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+.container2 {
+  display: flex;
+  flex-direction: row;
+  /* gap: 10px; */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-/* Your CSS code goes here */
-
+.container2 img {
+  height: 250px;
+  width: 96%;
+}
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
-
 /* ------------------------------ Form ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
-
 /* Your CSS code goes here */
-
 /* --------------------------------------------------------------------------- */
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
 /* --------------------------------------------------------------------------- */
-
 /* ------------------------- Smaller than 990px (tablet) ------------------------- */
 @media (max-width: 990px) {
   /* Your CSS code goes here */
 }
-
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
   /* Your CSS code goes here */
 }
-
 /* ------------------------------ Hamburguer menu ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Alert ------------------------------ */
-
 /* Your CSS code goes here */
-
 /* ------------------------------ Sticky scroll bar ------------------------------ */
-
 /* Your CSS code goes here */
