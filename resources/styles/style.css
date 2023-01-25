@@ -240,6 +240,52 @@ li fir #circlenav {
 #section3 {
   display: flex;
 }
+
+/* ------------------------------ SECTION 3 Recent projects ------------------------------ */
+
+#section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-start;
+}
+
+#section3 h2 {
+  font-size: 40px;
+  text-align: left;
+  color: #292e47;
+}
+
+#recent-projects {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: left;
+  line-height: 40px;
+}
+
+#recent-projects h3 {
+  font-size: 22px;
+  color: #292e47;
+}
+
+.text-projects {
+  margin-left: 30px;
+  padding-bottom: 40px;
+}
+
+#box1 {
+  background-color: #fafafa;
+  /* width: 340px;
+  height: 200px; */
+}
+
+.projects {
+  height: 240px;
+  width: 320px;
+}
 /* ------------------------------ Client reviews ------------------------------ */
 .section4 {
   background-color: #292e47;
@@ -444,15 +490,15 @@ li fir #circlenav {
   display: flex;
   flex-direction: row;
   /* gap: 10px; */
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 }
 
 .container2 img {
   height: 250px;
-  width: 80%;
+  width: 96%;
 }
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
