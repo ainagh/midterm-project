@@ -117,7 +117,6 @@ li fir #circlenav {
   display: inline-block;
   font-size: 16px;
 } */
-} */
 
 .contactus:hover {
   background-color: #414247;
@@ -126,23 +125,6 @@ li fir #circlenav {
 
 /* ------------------------------   SECTION 1 ------------------------------ */
 
-/* #section1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
-
-#section1 {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 10%;
-  justify-content: end;
-  gap: 100px;
-}
-
-#sec1text {
 /* #section1 {
   display: flex;
   justify-content: space-between;
@@ -183,9 +165,6 @@ li fir #circlenav {
 #buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
-#buttons {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 /*----------COMPROBAR-----------*/
@@ -203,7 +182,6 @@ li fir #circlenav {
   display: inline-block;
   font-size: 16px;
 }
- */
  */
 .getintouch:hover {
   background-color: #414247;
@@ -250,7 +228,6 @@ li fir #circlenav {
   right: 60px;
   z-index: 1;
 }
-
 
 #images-3 {
   position: relative;
