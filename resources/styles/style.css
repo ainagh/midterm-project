@@ -45,28 +45,6 @@ h5 {
   color: #6b708d;
   font-size: 18px;
 }
-<<<<<<< HEAD
-=======
-
-button {
-  background-color: #072ac8;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* ----------------- AÑADIR PARTE 1 KAREN ------------------- */
-
->>>>>>> aina
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
 
@@ -107,15 +85,9 @@ li fir #circlenav {
   font-weight: 500;
 }
 
-<<<<<<< HEAD
-/* #navlist a{
-  text-decoration: none;
-} */
-=======
 #navlist a {
   color: #6b708d;
 }
->>>>>>> aina
 
 /* #navlist a:first-child {
   color: #0082f3;
@@ -127,13 +99,8 @@ li fir #circlenav {
  
 #navlist a:nth-of-type(3) {
   color: #6b708d;
-<<<<<<< HEAD
  }
   */
-=======
- } */
- 
->>>>>>> aina
 #navlist a:hover {
   color: #072ac8;
   cursor: pointer;
@@ -185,15 +152,6 @@ li fir #circlenav {
   padding-right: 8%;
 }
 
-<<<<<<< HEAD
-=======
-h1{
-  font-size: 55px;
-  color: #292e47;
-  line-height: 70px;
- }
-
->>>>>>> aina
 .greytext {
   color: #6b708d;
   font-size: 20px;
@@ -269,7 +227,6 @@ h1{
   z-index: 1;
 }
 
-<<<<<<< HEAD
 #images-3 {
   position: relative;
 }
@@ -297,9 +254,6 @@ h1{
 }
 
 /* ------------------------------ Partners ------------------------------ */
-=======
-/* ------------------------------ SECTION 2 Partners ------------------------------ */
->>>>>>> aina
 #section2 {
   display: flex;
   flex-direction: column;
@@ -315,16 +269,8 @@ h1{
   gap: 4rem;
 }
 
-<<<<<<< HEAD
-/* ------------------------------ Recent projects ------------------------------ */
-#bigimg img {
-  height: 50px;
-  width: 50px;
-}
-=======
 
 /* ------------------------------ SECTION 3 Recent projects ------------------------------ */
->>>>>>> aina
 
 #section3 {
   display: flex;
@@ -349,7 +295,6 @@ h1{
   line-height: 40px;
 }
 
-<<<<<<< HEAD
 /* ------------------------------ SECTION 3 Recent projects ------------------------------ */
 
 #section3 {
@@ -378,11 +323,6 @@ h1{
 #recent-projects h3 {
   font-size: 22px;
   color: #292e47;
-=======
-#recent-projects h3 {
-font-size: 22px;
-color: #292e47;
->>>>>>> aina
 }
 
 .text-projects {
@@ -395,8 +335,6 @@ color: #292e47;
   /* width: 340px;
   height: 200px; */
 }
-<<<<<<< HEAD
-=======
 
 
 
@@ -406,7 +344,6 @@ color: #292e47;
 }
 
 
->>>>>>> aina
 
 .projects {
   height: 240px;
@@ -418,15 +355,11 @@ color: #292e47;
   background-image: url(../images/testimonial-section/orbit.png);
   background-size: cover;
   position: relative;
-<<<<<<< HEAD
   padding: 15px;
-=======
->>>>>>> aina
 }
 .container4 {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   gap: 160px;
   align-content: center;
   justify-content: space-around;
@@ -437,67 +370,34 @@ color: #292e47;
   position: absolute;
   top: 50px;
   left: 130px;
-=======
-  gap: 90px;
-  align-content: center;
-  justify-content: space-around;
-  align-items: center;
-  padding: 60px 80px;
-}
-.containerimg img:nth-child(1) {
-  position: absolute;
-  top: 40px;
-  left: 40px;
->>>>>>> aina
   height: 140px;
   width: 140px;
 }
 .containerimg img:nth-child(2) {
   position: absolute;
-<<<<<<< HEAD
   bottom: 50px;
   right: 130px;
-=======
-  bottom: 40px;
-  right: 40px;
->>>>>>> aina
   height: 140px;
   width: 140px;
 }
 .containerimg img:nth-child(3) {
   position: absolute;
-<<<<<<< HEAD
   bottom: 50px;
   left: 130px;
-=======
-  bottom: 40px;
-  left: 40px;
->>>>>>> aina
   height: 140px;
   width: 140px;
 }
 .containerimg img:nth-child(4) {
   position: absolute;
-<<<<<<< HEAD
   top: 50px;
   right: 130px;
-=======
-  top: 40px;
-  right: 40px;
->>>>>>> aina
   height: 140px;
   width: 140px;
 }
 .container4 div {
   display: flex;
-<<<<<<< HEAD
   text-align: justify;
   align-items: center;
-=======
-  /* flex-direction: row; */
-  /* gap: 10px;
-  align-items: center; */
->>>>>>> aina
 }
 .container4 h2 {
   color: white;
@@ -508,13 +408,8 @@ color: #292e47;
   text-align: center;
 }
 .container4 div img {
-<<<<<<< HEAD
   height: 56px;
   width: 56px;
-=======
-  height: 36px;
-  width: 36px;
->>>>>>> aina
   border-radius: 50%;
   margin: 2px 10px;
 }
@@ -522,7 +417,6 @@ color: #292e47;
 .TestimonialName {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   text-align: start;
   font-size: 18px;
 }
@@ -537,19 +431,13 @@ color: #292e47;
   margin-left: -22px;
   font-weight: 400;
   font-size: 13px;
-=======
->>>>>>> aina
 }
 /* ------------------------------ Services ------------------------------ */
 .section5 {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   margin: 120px 80px 120px 80px;
   gap: 70px;
-=======
-  margin: 20px;
->>>>>>> aina
 }
 
 .container5 {
@@ -557,11 +445,7 @@ color: #292e47;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: stretch;
-<<<<<<< HEAD
   gap: 30px;
-=======
-  gap: 35px;
->>>>>>> aina
   align-content: stretch;
   justify-content: space-evenly;
 }
@@ -576,32 +460,19 @@ color: #292e47;
   width: 350px;
   align-content: center;
   justify-content: space-evenly;
-<<<<<<< HEAD
   padding-top: 75px;
-=======
->>>>>>> aina
 }
 .container5 button {
   color: var(--primary);
   background-color: white;
   margin: 0;
   padding: 0;
-<<<<<<< HEAD
   font-weight: 550;
-=======
-}
-
-.container5 button:hover {
-  cursor: pointer;
->>>>>>> aina
 }
 /* ------------------------------ Questions form ------------------------------ */
 .section6 {
   background-color: #ffc600;
-<<<<<<< HEAD
   padding: 20px;
-=======
->>>>>>> aina
 }
 .container6 {
   display: flex;
@@ -611,11 +482,7 @@ color: #292e47;
   margin: 50px;
   flex-wrap: wrap;
   align-content: center;
-<<<<<<< HEAD
   padding: 70px;
-=======
-  padding: 80px;
->>>>>>> aina
   gap: 40px;
 }
 
@@ -640,7 +507,6 @@ color: #292e47;
   z-index: 2;
 }
 
-<<<<<<< HEAD
 button {
   height: 45px;
   padding: auto;
@@ -653,33 +519,19 @@ button {
 /* ------------------------------ Footer ------------------------------ */
 
 .containerFooter {
-=======
-/* ------------------------------ Footer ------------------------------ */
-
-.containerFotter {
->>>>>>> aina
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-<<<<<<< HEAD
   justify-content: space-between;
   align-items: center;
   margin: 80px;
   gap: 30px;
 }
-=======
-  justify-content: space-around;
-  align-items: center;
-  padding: 20px;
-}
-
->>>>>>> aina
 .container2-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
-<<<<<<< HEAD
   gap: 30px 8px;
 }
 .containerFooter img {
@@ -746,33 +598,3 @@ button {
 /* Your CSS code goes here */
 /* ------------------------------ Sticky scroll bar ------------------------------ */
 /* Your CSS code goes here */
-=======
-  gap: 15px;
-}
-
-/* -------------------------------------------------------------------------- */
-
-
-
-/* ------------------ CONTACT US --------------------- */
-
-#form {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-column-gap: 16px;
-  grid-row-gap: 16px;
-  color: #6b708d;
-}
-.formLabel {
-  background-color: #d0d1d6;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-.submit-button:hover {
-  background-color: #292e47;
-  cursor: pointer;
-}
->>>>>>> aina
