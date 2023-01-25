@@ -119,16 +119,18 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 ###### Martes 24, Enero 2023
 
 - [ ] Solucionar problemas Github
-- [ ] Crear html de la sección "Contact Us"
-- [ ] Crear CSS de la sección "Home Page"
-- [ ] Actualizar README
+- [X] Crear html de la sección "Contact Us"
+- [X] Crear CSS de la sección "Home Page"
+- [X] Actualizar README
 
 
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
-- [ ] Crear CSS de la sección "Contact Us"
-- [ ] Crear CSS de la sección "Contact Us"
+- [ ] Acabar el style del form
+- [ ] Implementar JSON
+- [ ] Avanzar en README
+
 
 #### Day Four
 
