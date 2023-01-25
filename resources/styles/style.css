@@ -66,6 +66,7 @@ nav {
 li fir #circlenav {
   display: flex;
   height: 20px;
+  height: 20px;
   top: 0%;
 }
 
@@ -116,6 +117,7 @@ li fir #circlenav {
   display: inline-block;
   font-size: 16px;
 } */
+} */
 
 .contactus:hover {
   background-color: #414247;
@@ -141,9 +143,29 @@ li fir #circlenav {
 }
 
 #sec1text {
+/* #section1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+#section1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: 10%;
+  justify-content: end;
+  gap: 100px;
+}
+
+#sec1text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding-right: 8%;
   align-items: flex-start;
   text-align: left;
   padding-right: 8%;
@@ -153,13 +175,22 @@ li fir #circlenav {
   color: #6b708d;
   font-size: 20px;
   line-height: 150%;
+  color: #6b708d;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 #buttons {
   display: grid;
   grid-template-columns: 1fr 1fr;
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
+/*----------COMPROBAR-----------*/
+
+/* .getintouch {
 /*----------COMPROBAR-----------*/
 
 /* .getintouch {
@@ -173,6 +204,7 @@ li fir #circlenav {
   font-size: 16px;
 }
  */
+ */
 .getintouch:hover {
   background-color: #414247;
   cursor: pointer;
@@ -183,11 +215,42 @@ li fir #circlenav {
   color: #6b708d;
   font-size: 17px;
   font-weight: 500;
+  padding: 15px 0px;
+  color: #6b708d;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .seeourwork:hover {
   cursor: pointer;
 }
+
+#images-3 {
+  position: relative;
+}
+
+.img1 {
+  height: 540px;
+}
+
+.card1 {
+  height: 50%;
+  width: 35%;
+  position: absolute;
+  top: 0px;
+  left: -70px;
+  z-index: 1;
+}
+
+.card2 {
+  height: 50%;
+  width: 38%;
+  position: absolute;
+  bottom: -90px;
+  right: 60px;
+  z-index: 1;
+}
+
 
 #images-3 {
   position: relative;
