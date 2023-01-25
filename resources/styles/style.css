@@ -219,11 +219,11 @@ li fir #circlenav {
 }
 
 .card2 {
-  height: 50%;
-  width: 50%;
+  height: 30%;
+  width: 38%;
   position: absolute;
-  bottom: -140px;
-  right: -100px;
+  bottom: 55px;
+  right: -13px;
   z-index: 1;
 }
 
