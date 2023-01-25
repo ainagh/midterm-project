@@ -14,7 +14,7 @@ body {
 button {
   background-color: #072ac8;
   border: none;
-  color: white;
+  color: #fafafa;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -29,6 +29,7 @@ a {
 h1 {
   font-size: 55px;
   color: #292e47;
+  margin-bottom: 13px;
 }
 h2 {
   font-weight: 600;
@@ -48,6 +49,8 @@ h5 {
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
 
+/* ------------------------------ Splash page ------------------------------ */
+
 /* ------ CIRCULAR ANIMATION ------ */
 
 /* Your CSS code goes here */
@@ -60,12 +63,9 @@ nav {
   flex-direction: row;
   margin: 5%;
 }
-#navlist a {
-  color: #414247;
-}
-li fir #circlenav {
+
+#circlenav {
   display: flex;
-  height: 20px;
   height: 20px;
   top: 0%;
 }
@@ -99,8 +99,8 @@ li fir #circlenav {
  
 #navlist a:nth-of-type(3) {
   color: #6b708d;
- }
-  */
+ } */
+
 #navlist a:hover {
   color: #072ac8;
   cursor: pointer;
@@ -124,20 +124,11 @@ li fir #circlenav {
 
 /* ------------------------------   SECTION 1 ------------------------------ */
 
-/* #section1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-} */
-
 #section1 {
   display: grid;
   grid-template-columns: 2fr 1fr;
   margin: 10%;
   justify-content: end;
-  gap: 100px;
 }
 
 #sec1text {
@@ -147,15 +138,9 @@ li fir #circlenav {
   align-items: flex-start;
   text-align: left;
   padding-right: 8%;
-  align-items: flex-start;
-  text-align: left;
-  padding-right: 8%;
 }
 
 .greytext {
-  color: #6b708d;
-  font-size: 20px;
-  line-height: 150%;
   color: #6b708d;
   font-size: 20px;
   line-height: 150%;
@@ -168,29 +153,11 @@ li fir #circlenav {
 
 /*----------COMPROBAR-----------*/
 
-/* .getintouch {
-/*----------COMPROBAR-----------*/
-
-/* .getintouch {
-  background-color:#072ac8; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
- */
 .getintouch:hover {
   background-color: #414247;
 }
 
 .seeourwork {
-  padding: 15px 0px;
-  color: #6b708d;
-  font-size: 17px;
-  font-weight: 500;
   padding: 15px 0px;
   color: #6b708d;
   font-size: 17px;
@@ -205,32 +172,29 @@ li fir #circlenav {
   position: relative;
 }
 
-.card1 {
-  height: 30%;
-  width: 35%;
-  position: absolute;
-  top: 33px;
-  left: -14px;
-  z-index: 1;
-}
-
-.card2 {
-  height: 35%;
-  width: 38%;
-  position: fixed;
-  bottom: 55px;
-  right: -13px;
-  z-index: 1;
-}
-#images-3 {
-  position: relative;
-}
-
 .img1 {
   height: 540px;
 }
 
-/* ------------------------------ Partners ------------------------------ */
+.card1 {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  left: -80px;
+  z-index: 1;
+}
+
+.card2 {
+  height: 39%;
+  width: 46%;
+  position: absolute;
+  bottom: -89px;
+  right: -70px;
+  z-index: 1;
+}
+
+/* ------------------------------ SECTION 2 Partners ------------------------------ */
 #section2 {
   display: flex;
   flex-direction: column;
@@ -241,9 +205,9 @@ li fir #circlenav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  margin: 30px 80px;
 }
 
 /* ------------------------------ SECTION 3 Recent projects ------------------------------ */
@@ -251,75 +215,35 @@ li fir #circlenav {
 #section3 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 15%;
+  padding: 80px;
 }
 
-#section3 h2 {
-  font-size: 40px;
-  text-align: left;
-  color: #292e47;
+#recent-projects,
+.container2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0px;
 }
 
-#recent-projects {
-  display: grid;
-  grid-column-gap: 40px;
-  grid-row-gap: 16px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  text-align: left;
-  line-height: 40px;
-}
-
-/* ------------------------------ SECTION 3 Recent projects ------------------------------ */
-
-#section3 {
+#recent-projects div,
+.container2 div {
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-items: flex-start;
+  gap: 20px;
 }
-
-#section3 h2 {
-  font-size: 40px;
-  text-align: left;
-  color: #292e47;
-}
-
-#recent-projects {
-  display: grid;
-  grid-column-gap: 40px;
-  grid-row-gap: 16px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  text-align: left;
-  line-height: 40px;
-}
-
-#recent-projects h3 {
-  font-size: 22px;
-  color: #292e47;
+#box1 img,
+.container2 img {
+  height: 240px;
+  width: 320px;
 }
 
 .text-projects {
-  margin-left: 30px;
+  padding: 20px;
   padding-bottom: 40px;
-}
-
-#box1 {
-  background-color: #fafafa;
-  /* width: 340px;
-  height: 200px; */
-}
-
-.projects {
-  height: 240px;
-  width: 320px;
-}
-
-.projects {
-  height: 240px;
-  width: 320px;
 }
 /* ------------------------------ Client reviews ------------------------------ */
 .section4 {
@@ -372,7 +296,7 @@ li fir #circlenav {
   align-items: center;
 }
 .container4 h2 {
-  color: white;
+  color: #fafafa;
 }
 .container4 h3 {
   color: #ffc600;
@@ -399,7 +323,7 @@ li fir #circlenav {
   font-size: 17px;
 }
 .TestimonialName :last-child {
-  color: white;
+  color: #fafafa;
   margin-left: -22px;
   font-weight: 400;
   font-size: 13px;
@@ -421,8 +345,23 @@ li fir #circlenav {
   align-content: stretch;
   justify-content: space-evenly;
 }
+
+#k67 {
+  width: 40px;
+  height: 2px;
+  background-color: rgba(110, 188, 236, 0.751);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 22px;
+  position: relative;
+}
+#k67 img {
+  position: absolute;
+  margin-top: -30px;
+}
 .container5 div {
-  background-color: white;
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -432,12 +371,13 @@ li fir #circlenav {
   width: 350px;
   align-content: center;
   justify-content: space-evenly;
-  padding-top: 75px;
+  padding-top: 55px;
 }
-.container5 button {
+.container5 button,
+.text-projects a {
   color: var(--primary);
-  background-color: white;
-  margin: 0;
+  background-color: #fafafa;
+  margin-top: 20px;
   padding: 0;
   font-weight: 550;
 }
@@ -479,15 +419,6 @@ li fir #circlenav {
   z-index: 2;
 }
 
-button {
-  height: 45px;
-  padding: auto;
-  width: 100px;
-  border-radius: 0;
-  border-style: none;
-  background-color: #072ac8;
-  color: white;
-}
 /* ------------------------------ Footer ------------------------------ */
 
 .containerFooter {
@@ -523,6 +454,13 @@ button {
   gap: 50px;
   color: #292e47;
   font-size: 20px;
+  line-height: 40px;
+}
+.container-project {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .mainProject {
   background-image: url(../images/projects-section/1.jpg);
@@ -530,20 +468,7 @@ button {
   height: 400px;
   width: 100%;
 }
-.container2 {
-  display: flex;
-  flex-direction: row;
-  /* gap: 10px; */
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
 
-.container2 img {
-  height: 250px;
-  width: 96%;
-}
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
