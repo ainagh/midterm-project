@@ -205,10 +205,6 @@ li fir #circlenav {
   position: relative;
 }
 
-.img1 {
-  height: 540px;
-}
-
 .card1 {
   height: 30%;
   width: 35%;
@@ -219,38 +215,19 @@ li fir #circlenav {
 }
 
 .card2 {
-  height: 50%;
-  width: 50%;
-  position: absolute;
-  bottom: -140px;
-  right: -100px;
+  height: 30%;
+  width: 38%;
+  position: fixed;
+  bottom: 55px;
+  right: -13px;
   z-index: 1;
 }
-
 #images-3 {
   position: relative;
 }
 
 .img1 {
   height: 540px;
-}
-
-.card1 {
-  height: 50%;
-  width: 35%;
-  position: absolute;
-  top: 0px;
-  left: -70px;
-  z-index: 1;
-}
-
-.card2 {
-  height: 50%;
-  width: 38%;
-  position: absolute;
-  bottom: -90px;
-  right: 60px;
-  z-index: 1;
 }
 
 /* ------------------------------ Partners ------------------------------ */
