@@ -85,19 +85,19 @@ li fir #circlenav {
   font-weight: 500;
 }
 
-/* #navlist a{
-  text-decoration: none;
-} */
+#navlist a {
+  color: #6b708d;
+}
 
-/* #navlist a:nth-child(1) {
+/* #navlist a:first-child {
   color: #0082f3;
- }
+ } */
 
-#navlist a:nth-child(2) {
+/* #navlist a:nth-of-type(2) {
   color: #6b708d;
  }
  
-#navlist a:nth-child(3) {
+#navlist a:nth-of-type(3) {
   color: #6b708d;
  }
   */
@@ -120,7 +120,6 @@ li fir #circlenav {
 
 .contactus:hover {
   background-color: #414247;
-  cursor: pointer;
 }
 
 /* ------------------------------   SECTION 1 ------------------------------ */
@@ -185,7 +184,6 @@ li fir #circlenav {
  */
 .getintouch:hover {
   background-color: #414247;
-  cursor: pointer;
 }
 
 .seeourwork {
@@ -213,19 +211,19 @@ li fir #circlenav {
 
 .card1 {
   height: 50%;
-  width: 35%;
+  width: 50%;
   position: absolute;
   top: 0px;
-  left: -70px;
+  left: -80px;
   z-index: 1;
 }
 
 .card2 {
   height: 50%;
-  width: 38%;
+  width: 50%;
   position: absolute;
-  bottom: -90px;
-  right: 60px;
+  bottom: -140px;
+  right: -100px;
   z-index: 1;
 }
 
@@ -271,14 +269,30 @@ li fir #circlenav {
   gap: 4rem;
 }
 
-/* ------------------------------ Recent projects ------------------------------ */
-#bigimg img {
-  height: 50px;
-  width: 50px;
-}
+
+/* ------------------------------ SECTION 3 Recent projects ------------------------------ */
 
 #section3 {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15%;
+}
+
+#section3 h2 {
+  font-size: 40px;
+  text-align: left;
+  color: #292e47;
+}
+
+#recent-projects {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  text-align: left;
+  line-height: 40px;
 }
 
 /* ------------------------------ SECTION 3 Recent projects ------------------------------ */
@@ -321,6 +335,15 @@ li fir #circlenav {
   /* width: 340px;
   height: 200px; */
 }
+
+
+
+.projects {
+  height: 240px;
+  width: 320px;
+}
+
+
 
 .projects {
   height: 240px;
