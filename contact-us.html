@@ -10,6 +10,23 @@
 <body>
 <style>
 
+/*  ------------ HAMBURGUER ------------- */
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 #form {
   margin: 150px;
 }
@@ -74,55 +91,44 @@ textarea::placeholder {
 
 /* ------------------------- Smaller than 766px (mobile) ------------------------- */
 @media (max-width: 766px) {
+  
   #form {
   margin: 30px;
 }
 
-.allform {
+.email-phone {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  color: #6b708d;
+  gap: 0;
 }
 
-input {
-  font-size: 14px;
-  color: #6b708d;
-  background-color: rgba(107, 112, 141, 0.1);
-  width: 100%;
-  padding: 20px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: transparent;
-}
-
-::placeholder {
-  color: #6b708d;
-}
-
-textarea {
-  font-size: 14px;
-  color: #6b708d;
-  background-color: rgba(107, 112, 141, 0.1);
-  width: 100%;
-  padding: 20px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: transparent;
-}
-
-textarea::placeholder {
-  font-family: "Roboto", sans-serif;
-}
-.submit-button:hover {
-  background-color: #292e47;
-  cursor: pointer;
-}
-
-.submit-button {
+.email-phone label {
   width: 100%;
 }
+
+
+/*  ------------ HAMBURGUER RESPONSIVE ------------- */
+
+.hamburguer {
+  display: block;
+
+ }
+
+#navlist {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #c8c8c8;
+  width: 100%;
+  text-align: left;
+  transition: 0.3s;
+ }
+
+ #navlist li {
+  margin: 16px 0;
+ }
 
 
 }
@@ -141,6 +147,11 @@ textarea::placeholder {
         <br>
         <li><a href="#">Services</a></li>
       </ul></div>
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <button class="contactus">Contact Us</button>
     </nav>
   </header>
