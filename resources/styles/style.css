@@ -344,7 +344,7 @@ nav {
   align-items: stretch;
   gap: 30px;
   align-content: stretch;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 #k67 {
@@ -369,7 +369,7 @@ nav {
   gap: 45px;
   padding: 40px;
   align-items: flex-start;
-  width: 350px;
+  width: 330px;
   align-content: center;
   justify-content: space-evenly;
   padding-top: 55px;
@@ -408,6 +408,7 @@ nav {
 }
 
 .container6 input {
+  background-color: #fafafa;
   border: 1px solid #072ac8;
   height: 50px;
   width: 393px;
@@ -477,7 +478,67 @@ a:visited {
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ Form ------------------------------ */
-/* Your CSS code goes here */
+#form {
+  margin: 86px;
+}
+
+.allform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  color: #6b708d;
+}
+
+.email-phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.email-phone label {
+  width: 50%;
+}
+
+input {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+::placeholder {
+  color: #6b708d;
+}
+
+textarea {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.submit-button:hover {
+  background-color: #292e47;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+}
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
@@ -499,6 +560,16 @@ a:visited {
   h5 {
     font-size: 18px;
   }
+  .logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .logos :nth-child(5) {
+    display: none;
+  }
+
   .input {
     flex-direction: column;
     position: relative;
@@ -545,22 +616,18 @@ a:visited {
     flex-direction: column;
     align-items: flex-start;
   }
-  .container2 {
-    flex-direction: column;
-    align-items: center;
+
+  .container2 div,
+  .container5 div,
+  #section3 div {
+    width: 100%;
   }
   #box1 img,
   .container2 img {
-    height: 240px;
-    width: 320px;
+    width: 100%;
+    object-fit: cover;
   }
 
-  .section5 {
-    margin: 98px 29px 98px 29px;
-  }
-  .container5 div {
-    width: none;
-  }
   #box1,
   .container2 {
     flex-direction: column;
@@ -573,10 +640,69 @@ a:visited {
   .container4 h3 {
     width: 120%;
   }
+  #form {
+    margin: 30px;
+  }
+  .email-phone {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .email-phone label {
+    width: 100%;
+  }
+  .hamburguer {
+    display: block;
+  }
+
+  #navlist {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #c8c8c8;
+    width: 100%;
+    text-align: left;
+    transition: 0.3s;
+  }
+
+  #navlist li {
+    margin: 16px 0;
+  }
+
+  #navlist.active {
+    left: 0;
+  }
 }
 /* ------------------------------ Hamburguer menu ------------------------------ */
-/* Your CSS code goes here */
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 /* ------------------------------ Alert ------------------------------ */
 /* Your CSS code goes here */
 /* ------------------------------ Sticky scroll bar ------------------------------ */
-/* Your CSS code goes here */
+.scroll-to-top {
+  height: 20px;
+  width: 100%;
+  background-color: transparent;
+  position: sticky;
+  text-align: end;
+  bottom: 0;
+}
+.scroll-to-top:hover {
+  background-color: rgba(36, 35, 35, 0.77);
+}
