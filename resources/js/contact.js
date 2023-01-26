@@ -1,11 +1,11 @@
 /* Crea tu propia lógica para hacer un fetch que emule una post request a un servidor y enseñe un mensaje en consola cuando la llamada se resuelva */
 
 
-const hamburger = document.querySelector(".hamburger")
+const hamburguer = document.querySelector(".hamburguer")
 const navMenu = document.querySelector(".nav-menu")
 
-hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
+hamburguer.addEventListener("click", () => {
+    hamburguer.classList.toggle("active");
     navMenu.classList.toggle("active");
 
 })

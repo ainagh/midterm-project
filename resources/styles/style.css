@@ -7,10 +7,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f2f4fc;
 }
+
 button {
   background-color: #072ac8;
   border: none;
@@ -22,20 +24,24 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
 a {
   text-decoration: none;
   font-size: 17px;
 }
+
 h1 {
   font-size: 55px;
   color: #292e47;
   margin-bottom: 13px;
 }
+
 h2 {
   font-weight: 600;
   color: #292e47;
   font-size: 40px;
 }
+
 h3 {
   font-weight: 500;
   color: #292e47;
@@ -45,6 +51,10 @@ h5 {
   font-weight: 400;
   color: #6b708d;
   font-size: 18px;
+}
+
+.learnmore:visited {
+  color: #072ac8;
 }
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
@@ -89,34 +99,42 @@ nav {
   color: #6b708d;
 }
 
-/* #navlist a:first-child {
-  color: #0082f3;
- } */
-
-/* #navlist a:nth-of-type(2) {
-  color: #6b708d;
- }
- 
-#navlist a:nth-of-type(3) {
-  color: #6b708d;
- } */
-
 #navlist a:hover {
   color: #072ac8;
   cursor: pointer;
 }
 
-/*----------COMPROBAR-----------*/
-/* .contactus {
-  background-color:#072ac8; 
+  /*  ------------ HAMBURGUER ------------- */
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #292e47;
+}
+
+.contactus {
+  color: #fafafa;
+  background-color: #072ac8;
   border: none;
-  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-} */
+  cursor: pointer;
+}
+
+.contactus:visited {
+  color: var(#fafafa);
+}
 
 .contactus:hover {
   background-color: #414247;
@@ -151,7 +169,6 @@ nav {
   grid-template-columns: 1fr 1fr;
 }
 
-/*----------COMPROBAR-----------*/
 
 .getintouch:hover {
   background-color: #414247;
@@ -470,12 +487,75 @@ nav {
   width: 100%;
 }
 
-a:visited {
+/* a:visited {
   color: var(--primary);
 }
-
+ */
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
+/* --------------- CONTACT US FORM ----------------*/
+#form {
+  margin: 150px;
+}
+
+.allform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  color: #6b708d;
+}
+
+.email-phone {
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.email-phone label {
+  width: 50%;
+}
+
+input {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+::placeholder {
+  color: #6b708d;
+}
+
+textarea {
+  font-size: 14px;
+  color: #6b708d;
+  background-color: rgba(107, 112, 141, 0.1);
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: transparent;
+}
+
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+.submit-button:hover {
+  background-color: #292e47;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 100%;
+}
+
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ Form ------------------------------ */
 #form {
@@ -643,20 +723,37 @@ textarea::placeholder {
   #form {
     margin: 30px;
   }
+  
   .email-phone {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-
+  
   .email-phone label {
     width: 100%;
   }
+  
+  
+  /*  ------------ HAMBURGUER RESPONSIVE ------------- */
+  
   .hamburguer {
     display: block;
-  }
+   }
 
-  #navlist {
+  .hamburguer.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  
+  .hamburguer.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburguer.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-menu {
     position: fixed;
     left: -100%;
     top: 70px;
@@ -666,33 +763,70 @@ textarea::placeholder {
     width: 100%;
     text-align: left;
     transition: 0.3s;
-  }
-
-  #navlist li {
-    margin: 16px 0;
-  }
-
-  #navlist.active {
+   }
+  
+   .nav-menu li {
+    margin: 10px 0;
+   }
+  
+  .nav-menu.active {
     left: 0;
   }
-}
-/* ------------------------------ Hamburguer menu ------------------------------ */
-.hamburguer {
-  display: none;
-  cursor: pointer;
+
+  #navlist ul {
+    gap: 0;
+  }
+
+  .contactus {
+    display: none;
+  }
+/* ------------------------SECTION 1 RESPONSIVE-----------------------*/
+  .card1 {
+    display: none;
+  }
+
+  .card2 {
+    display: none;
+  }
+
+  #section1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  #sec1text {
+    justify-content: center;
+    text-align: center;
+    margin: 2%;
+    align-items: center;
+    padding: 5%;
+  } 
+  
+  .greytext {
+    color: #6b708d;
+    font-size: 15px;
+    line-height: 150%;
+  }
+  
+  #buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  h1 {
+    font-size: 35px;
+  }
+
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
 
 /* ------------------------------ Alert ------------------------------ */
+
 /* Your CSS code goes here */
 /* ------------------------------ Sticky scroll bar ------------------------------ */
 .scroll-to-top {

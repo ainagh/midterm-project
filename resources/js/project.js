@@ -43,3 +43,17 @@ getExternalApi2 ()
 
 
 /* ADVANCED: consigue que la info del post funcione dinámicamente y enseñe un post u otro según la URL */
+
+
+
+
+/* ------- HAMBURGUER -------- */
+
+const hamburguer = document.querySelector(".hamburguer")
+const navMenu = document.querySelector(".nav-menu")
+
+hamburguer.addEventListener("click", () => {
+    hamburguer.classList.toggle("active");
+    navMenu.classList.toggle("active");
+
+})

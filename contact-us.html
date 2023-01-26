@@ -8,145 +8,6 @@
     <link rel="stylesheet" href="./resources/styles/style.css">
 </head>
 <body>
-<style>
-
-/*  ------------ HAMBURGUER ------------- */
-
-.hamburguer {
-  display: none;
-  cursor: pointer;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: white;
-}
-
-#form {
-  margin: 150px;
-}
-
-.allform {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  color: #6b708d;
-}
-
-.email-phone {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.email-phone label {
-  width: 50%;
-}
-
-input {
-  font-size: 14px;
-  color: #6b708d;
-  background-color: rgba(107, 112, 141, 0.1);
-  width: 100%;
-  padding: 20px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: transparent;
-}
-
-::placeholder {
-  color: #6b708d;
-}
-
-textarea {
-  font-size: 14px;
-  color: #6b708d;
-  background-color: rgba(107, 112, 141, 0.1);
-  width: 100%;
-  padding: 20px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: transparent;
-}
-
-textarea::placeholder {
-  font-family: "Roboto", sans-serif;
-}
-.submit-button:hover {
-  background-color: #292e47;
-  cursor: pointer;
-}
-
-.submit-button {
-  width: 100%;
-}
-
-/* ------------------------- Smaller than 766px (mobile) ------------------------- */
-@media (max-width: 766px) {
-  
-  #form {
-  margin: 30px;
-}
-
-.email-phone {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.email-phone label {
-  width: 100%;
-}
-
-
-/*  ------------ HAMBURGUER RESPONSIVE ------------- */
-
-.hamburguer {
-  display: block;
- }
-.hamburguer.active .bar:nth-child(2){
-  opacity: 0;
-}
-
-.hamburguer.active .bar:nth-child(1){
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburguer.active .bar:nth-child(3){
-  transform: translateY(-8px) rotate(-45deg);
-}
-
-.nav-menu {
-  position: fixed;
-  left: -100%;
-  top: 70px;
-  gap: 0;
-  flex-direction: column;
-  background-color: #c8c8c8;
-  width: 100%;
-  text-align: left;
-  transition: 0.3s;
- }
-
- .nav-menu li {
-  margin: 16px 0;
- }
-
-.nav-menu.active {
-  left: 0;
-}
-
-}
-</style>
-
   <header>
     <!-- ------------------- NAV BAR ---------------- -->
     <nav>
@@ -155,9 +16,9 @@ textarea::placeholder {
       </div>
       <div id="navlist">
         <ul class="nav-menu">
-          <li><a href="#">Home</a></li>
+          <li><a href="./index.html">Home</a></li>
           <br>
-         <li><a href="#" active>Projects</a></li>
+         <li><a href="./project.html">Projects</a></li>
           <br>
           <li><a href="#">Services</a></li>
         </ul>
@@ -167,7 +28,7 @@ textarea::placeholder {
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
-      <button class="contactus">Contact Us</button>
+      <a class="contactus" href="./contact-us.html">Contact Us</a>
     </nav>
   </header>
   <!-- ------ SECTION 1 FORM ------ -->
@@ -193,14 +54,13 @@ textarea::placeholder {
   </section>
 
 
-
-  <!-----------Footer---------->
-  <footer>
-    <section>
-    <div class="containerFotter">
+   <!-----------Footer---------->
+   <footer>
+    <section class="section7">
+    <div class="containerFooter">
       <div class="container1">
       <img src="./resources/images/logos/circle.svg" alt="Circle logo">
-      <div>2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</div>
+      <h5>2972 Westheimer Rd. Santa Ana,<br> Illinois 85486</h5>
       </div>
      
       <ul class="container2-grid">
