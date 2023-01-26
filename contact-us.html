@@ -111,10 +111,20 @@ textarea::placeholder {
 
 .hamburguer {
   display: block;
-
  }
+.hamburguer.active .bar:nth-child(2){
+  opacity: 0;
+}
 
-#navlist {
+.hamburguer.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
   position: fixed;
   left: -100%;
   top: 70px;
@@ -126,11 +136,11 @@ textarea::placeholder {
   transition: 0.3s;
  }
 
- #navlist li {
+ .nav-menu li {
   margin: 16px 0;
  }
 
-#navlist.active {
+.nav-menu.active {
   left: 0;
 }
 
@@ -144,12 +154,14 @@ textarea::placeholder {
       <img src="./resources/images/logos/circle.svg" alt="Circle logo">
       </div>
       <div id="navlist">
-        <li><a href="#">Home</a></li>
-        <br>
-        <li><a href="#" active>Projects</a></li>
-        <br>
-        <li><a href="#">Services</a></li>
-      </ul></div>
+        <ul class="nav-menu">
+          <li><a href="#">Home</a></li>
+          <br>
+         <li><a href="#" active>Projects</a></li>
+          <br>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
       <div class="hamburguer">
         <span class="bar"></span>
         <span class="bar"></span>
