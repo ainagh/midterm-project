@@ -9,32 +9,39 @@
 </head>
 <body>
   <header>
+    <!-- ------------------- NAV BAR ---------------- -->
     <nav>
       <div id="circlenav">
       <img src="./resources/images/logos/circle.svg" alt="Circle logo">
       </div>
       <div id="navlist">
-        <ul>
-        <li><a href="./index.html">Home</a></li>
-        <br>
-        <li><a href="./project.html">Projects</a></li>
-        <br>
-        <li><a href="#">Services</a></li>
-      </ul></div>
-      <button class="contactus">Contact Us</button>
+        <ul class="nav-menu">
+          <li><a href="./index.html">Home</a></li>
+          <br>
+         <li><a href="./project.html">Projects</a></li>
+          <br>
+          <li><a href="#">Services</a></li>
+        </ul>
+      </div>
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <a class="contactus" href="./contact-us.html">Contact Us</a>    
     </nav>
   </header>
       <!-- ----------------- SECTION 1 ------------------->
       <section class="section1">
         <div class="container-project">
           <div>
-            <h1>Simplify</h1>
+            <h1 id="title-project">Simplify</h1>
             <p>UI Design & App Development</p>
           </div>
             <p>Completed on 2/2/22</p>
         </div>
         <div class="mainProject"></div>
-        <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus. <br>
+        <p id="body-project">Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus. <br>
 <br>
             Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
         
@@ -45,7 +52,7 @@
         <div class="container2">
           <div>
             <img src="./resources/images/projects-section/2.jpg" alt="">
-            <div class="text-projects">
+            <div id="te1" class="text-projects">
               <h3>Dashcoin</h3>
             <p>Web Development</p>
             <a href="#">Learn More</a>
@@ -53,7 +60,7 @@
           </div>
           <div>
             <img src="./resources/images/projects-section/3.jpg" alt="">
-            <div class="text-projects">
+            <div id="te2" class="text-projects">
             <h3>Vectorify</h3>
             <p>User Experience Design</p>
             <a href="#">Learn More</a>
@@ -61,7 +68,7 @@
            </div>
         <div>
             <img src="./resources/images/projects-section/4.jpg" alt="">
-            <div class="text-projects">
+            <div id="te3" class="text-projects">
             <h3>Orbit</h3>
             <p>UI Desing</p>
             <a href="#">Learn More</a>
@@ -104,4 +111,5 @@
      </footer>
 
 </body>
+<script src="./resources/js/project.js"></script>
 </html>
