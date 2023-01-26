@@ -14,3 +14,5 @@ hamburguer.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 
 })
+
+console.log("Simple Push")
