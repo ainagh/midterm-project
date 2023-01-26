@@ -14,5 +14,30 @@ const scrollMeAllTheWayUp = () => {
 
 scrollBtn.addEventListener("click", scrollMeAllTheWayUp)
 
+/* ----------------------------------------API--------------------------------- */
 
 
+/* GET: Utilizado para obtener información de un recurso. Este es el método utilizado por defecto cuando se hace una petición HTTP sin especificar un método.
+
+  // ----- Envío de una solicitud -----/*  */
+
+ let getExternalApi = () => {
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((respuestas) => {
+        console.log (respuestas);
+        respuestas.forEach((element, i) => {
+          console.log(i);
+          if (i < 3){
+          document.querySelector(`#text${i+1} h3`).innerHTML = element.title;
+          document.querySelector(`#text${i+1} p`).innerHTML = element.body;
+          }
+        });
+        /* for (let i = 0; i < 3; i++) {
+          document.querySelector(`#text${i+1} h3`).innerHTML = respuestas[i].title;
+          document.querySelector(`#text${i+1} p`).innerHTML = respuestas[i].body;
+        } */
+    })
+    .catch((error) => console.log(error));
+};
+getExternalApi ()
