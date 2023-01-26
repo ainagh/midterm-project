@@ -55,6 +55,7 @@ h5 {
 
 .learnmore:visited {
   color: #072ac8;
+  
 }
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
@@ -347,7 +348,7 @@ nav {
   font-size: 13px;
 }
 /* ------------------------------ Services ------------------------------ */
-.section5 {
+#section5 {
   display: flex;
   flex-direction: column;
   margin: 120px 80px 120px 80px;
@@ -830,12 +831,14 @@ textarea::placeholder {
 /* Your CSS code goes here */
 /* ------------------------------ Sticky scroll bar ------------------------------ */
 .scroll-to-top {
-  height: 20px;
+  height: 30px;
   width: 100%;
   background-color: transparent;
   position: sticky;
-  text-align: end;
-  bottom: 0;
+  text-align: center;
+  bottom: 10;
+  color: #fafafa;
+  font-size: 26px;
 }
 .scroll-to-top:hover {
   background-color: rgba(36, 35, 35, 0.77);
