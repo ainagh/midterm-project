@@ -25,8 +25,8 @@ let getExternalApi2 = () => {
         respuestas.forEach((element, i) => {
           console.log(i);
           if (i < 3){
-          document.querySelector(`#te${i+1} h3`).innerHTML = element.title;
-          document.querySelector(`#te${i+1} p`).innerHTML = element.body;
+          document.querySelector(`#te${i+1} h3`).innerHTML = element.title.substring(0, 19);
+          document.querySelector(`#te${i+1} p`).innerHTML = element.body.substring(0, 29);
 
         
           }
