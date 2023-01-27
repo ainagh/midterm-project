@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -55,7 +56,6 @@ h5 {
 
 .learnmore:visited {
   color: #072ac8;
-  
 }
 /* ------------------------------------------------------------------------ */
 /* ------------------------------ INDEX html ------------------------------ */
@@ -95,8 +95,11 @@ nav {
   font-size: 17px;
   font-weight: 500;
 }
+.home {
+  color: #0082f3;
+}
 
-.nav-menu li:first-of-type a{
+.nav-menu li:first-of-type a {
   color: #0082f3;
 }
 #navlist a {
@@ -108,7 +111,7 @@ nav {
   cursor: pointer;
 }
 
-  /*  ------------ HAMBURGUER ------------- */
+/*  ------------ HAMBURGUER ------------- */
 
 .hamburguer {
   display: none;
@@ -173,7 +176,6 @@ nav {
   grid-template-columns: 1fr 1fr;
 }
 
-
 .getintouch:hover {
   background-color: #414247;
 }
@@ -220,6 +222,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
+  margin: 0px 80px;
 }
 
 .logos {
@@ -229,21 +233,32 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 30px 80px;
-  animation: scroll 8s linear infinite;
-
+  animation: scroll 10s linear infinite;
+  gap: 20px;
+  margin-top: 22px;
 }
+/* .logos::before {
+  position: absolute;
+  height: 100%;
+  width: 10rem;
+}
+.logos::before {
+  left: 0;
+  background: linear-gradient(to right);
+}
+.logos::after {
+  right: 0;
+  background: linear-gradient(to left);
+} */
 @keyframes scroll {
   0% {
-    transform: translateX(10);
+    transform: translateX(80vw);
   }
-  50% {
-    transform: translateX(calc(-60px * 8));
-  }
+
   100% {
-    transform: translateX(calc(60px * 8));
+    transform: translateX(-180vw);
   }
 }
-
 
 /* ------------------------------ SECTION 3 Recent projects ------------------------------ */
 
@@ -280,6 +295,9 @@ nav {
 .text-projects {
   padding: 20px;
   padding-bottom: 40px;
+}
+.text-projects p {
+  width: 282px;
 }
 /* ------------------------------ Client reviews ------------------------------ */
 .section4 {
@@ -385,7 +403,7 @@ nav {
 #k67 {
   width: 40px;
   height: 2px;
-  background-color: rgba(110, 188, 236, 0.751);
+  background-color: rgba(128, 177, 210, 0.434);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -526,10 +544,10 @@ nav {
 
 .email-phone {
   display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 20px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .email-phone label {
@@ -658,14 +676,15 @@ textarea::placeholder {
   h5 {
     font-size: 18px;
   }
+
   .logos {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
     animation: none;
-    margin-top: 30px;
-    margin-bottom: -23px;
+    margin: 0;
+    margin-top: 50px;
   }
   .logos :nth-child(5) {
     display: none;
@@ -744,40 +763,39 @@ textarea::placeholder {
   #form {
     margin: 30px;
   }
-  
+
   .email-phone {
     display: flex;
     flex-direction: column;
     gap: 0;
   }
-  
+
   .email-phone label {
     width: 100%;
   }
-  
-  
+
   /*  ------------ HAMBURGUER RESPONSIVE ------------- */
-  
+
   .hamburguer {
     display: block;
-   }
+  }
 
-  .hamburguer.active .bar:nth-child(2){
+  .hamburguer.active .bar:nth-child(2) {
     opacity: 0;
   }
-  
-  .hamburguer.active .bar:nth-child(1){
+
+  .hamburguer.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
-  
-  .hamburguer.active .bar:nth-child(3){
+
+  .hamburguer.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  
+
   .nav-menu {
     position: absolute;
     top: -200%;
-   /*  top: 80px; */
+    /*  top: 80px; */
     gap: 0;
     flex-direction: column;
     background-color: #c8c8c8;
@@ -785,15 +803,14 @@ textarea::placeholder {
     text-align: left;
     transition: top 0.5s;
     left: 0%;
-   }
-  
-   .nav-menu li {
+  }
+
+  .nav-menu li {
     margin: 10px 0;
     text-align: left;
     margin-left: 30px;
-   }
+  }
 
-  
   .nav-menu.active {
     top: 80px;
   }
@@ -805,7 +822,7 @@ textarea::placeholder {
   .contactus {
     display: none;
   }
-/* ------------------------SECTION 1 RESPONSIVE-----------------------*/
+  /* ------------------------SECTION 1 RESPONSIVE-----------------------*/
   .card1 {
     display: none;
   }
@@ -821,34 +838,32 @@ textarea::placeholder {
     flex-wrap: wrap;
     align-items: center;
   }
-  
+
   #sec1text {
     justify-content: center;
     text-align: center;
     margin: 2%;
     align-items: center;
     padding: 5%;
-  } 
-  
+  }
+
   .greytext {
     color: #6b708d;
     font-size: 15px;
     line-height: 150%;
   }
-  
+
   #buttons {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 20px;
   }
-  
+
   h1 {
     font-size: 35px;
   }
-
 }
-
 
 /* ------------------------------ Alert ------------------------------ */
 

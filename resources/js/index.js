@@ -30,7 +30,7 @@ scrollBtn.addEventListener("click", scrollMeAllTheWayUp)
           console.log(i);
           if (i < 3){
           document.querySelector(`#text${i+1} h3`).innerHTML = element.title.substring(0, 19);
-          document.querySelector(`#text${i+1} p`).innerHTML = element.body.substring(0, 29);
+          document.querySelector(`#text${i+1} p`).innerHTML = element.body.substring(0, 290);
           }
         });
         /* for (let i = 0; i < 3; i++) {
