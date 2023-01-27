@@ -45,7 +45,7 @@ h2 {
 h3 {
   font-weight: 500;
   color: #292e47;
-  font-size: 24px;
+  font-size: 22px;
 }
 h5 {
   font-weight: 400;
@@ -96,6 +96,9 @@ nav {
   font-weight: 500;
 }
 
+.nav-menu li:first-of-type a{
+  color: #0082f3;
+}
 #navlist a {
   color: #6b708d;
 }
@@ -226,7 +229,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin: 30px 80px;
+  animation: scroll 8s linear infinite;
+
 }
+@keyframes scroll {
+  0% {
+    transform: translateX(10);
+  }
+  50% {
+    transform: translateX(calc(-60px * 8));
+  }
+  100% {
+    transform: translateX(calc(60px * 8));
+  }
+}
+
 
 /* ------------------------------ SECTION 3 Recent projects ------------------------------ */
 
@@ -646,6 +663,9 @@ textarea::placeholder {
     flex-direction: row;
     justify-content: space-between;
     gap: 40px;
+    animation: none;
+    margin-top: 30px;
+    margin-bottom: -23px;
   }
   .logos :nth-child(5) {
     display: none;
@@ -755,23 +775,27 @@ textarea::placeholder {
   }
   
   .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 70px;
+    position: absolute;
+    top: -200%;
+   /*  top: 80px; */
     gap: 0;
     flex-direction: column;
     background-color: #c8c8c8;
     width: 100%;
     text-align: left;
-    transition: 0.3s;
+    transition: top 0.5s;
+    left: 0%;
    }
   
    .nav-menu li {
     margin: 10px 0;
+    text-align: left;
+    margin-left: 30px;
    }
+
   
   .nav-menu.active {
-    left: 0;
+    top: 80px;
   }
 
   #navlist ul {

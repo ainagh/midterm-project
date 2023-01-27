@@ -1,4 +1,4 @@
-<!-- HOLAAAAAAAAAAA-----
+<!-- 
 Un archivo README.md es un archivo de markdown que contiene información sobre un proyecto. Típicamente se encuentra en el directorio raíz de un proyecto y se utiliza para proporcionar documentación e instrucciones para otros que puedan querer usar o contribuir al proyecto.
 
 Para los desarrolladores, un archivo README.md bien estructurado y bien documentado puede ser beneficioso de varias maneras. Puede ayudar a asegurar que otros puedan entender y usar fácilmente el proyecto, lo que puede conducir a más contribuciones y una comunidad más activa alrededor del proyecto. Además, puede hacer que sea más fácil para los desarrolladores incorporar a nuevos miembros del equipo y para que otros entiendan el propósito y la funcionalidad del proyecto.
@@ -8,7 +8,7 @@ Para otros desarrolladores, un archivo README.md bien estructurado y bien docume
 En el caso específico de comenzar en este mundo de desarrollo como desarrollador junior, lo cual todos ustedes, queridos estudiantes caen bajo ella, puede beneficiarse de la siguiente manera:
 
 Tener un archivo README.md bien estructurado y bien documentado también puede ser beneficioso para los nuevos desarrolladores junior que están tratando de entrar en el mercado laboral. El mercado laboral para desarrolladores es altamente competitivo, y tener un portafolio de proyectos bien documentados y fácilmente comprensibles puede diferenciar a un desarrollador junior de otros. Un archivo README.md bien escrito demuestra la habilidad de un desarrollador para comunicar y documentar su trabajo de manera efectiva, lo cual es una habilidad importante en cualquier entorno profesional. Además, tener un portafolio de proyectos bien documentados también puede ayudar a los desarrolladores junior a entender y explicar mejor su propio trabajo, lo cual puede ser beneficioso en entrevistas laborales y otros entornos profesionales. En general, un archivo README.md bien estructurado y bien documentado puede ayudar a los desarrolladores junior a mostrar sus habilidades y destacar en un mercado laboral competitivo.
--->
+ -->
 
 <!-- Estructura -->
 <!--
@@ -23,12 +23,7 @@ Tener un archivo README.md bien estructurado y bien documentado también puede s
 <a name="readme-top"></a>
 
 <!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <img src="./resources/images/readMe/wu.png" alt="Logo" width="80" height="80">
-  <h3 align="center">Circle Landing Agency Website</h3>
-  <a href="https://midterm-project.vercel.app/">Visit Website</a>
-</div>
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -127,7 +122,8 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 #### Day Three
 
 ###### Miercoles 25, Enero 2023
-- [ ] Acabar el style del form
+- [X] Acabar el style del form
+- [X] Empezar a estilar el responsive
 - [ ] Implementar JSON
 - [ ] Avanzar en README
 
@@ -135,10 +131,18 @@ En resumen, la sección "construido con" es una excelente manera de brindar a lo
 #### Day Four
 
 ###### Jueves 26, Enero 2023
+- [X] Acabar adaptación responsive
+- [X] Implementar JSON
+- [X] Fetch API 
+- [X] Avanzar en README
+
 
 #### Day Five
 
 ###### Viernes 27, Enero 2023
+- [ ] Finalizar con los detalles del estilado
+- [ ] Preparar presentación
+- [ ] Acabar el README
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,10 +161,13 @@ En esta sección se puede incluir información como:
 
 En resumen, la sección "sobre mí" es una excelente manera de brindar a los usuarios y contribuidores una idea de quién está detrás del proyecto y cómo pueden ponerse en contacto con ellos si tienen preguntas o comentarios. Es una buena manera de establecer una conexión con la comunidad de desarrolladores y una forma de mostrar la transparencia en el proyecto.
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Karen Galarza - @instagram correo@electronico.com 
+<!-- Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com -->
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Aina Gatell - @_ainagh aina.gatell@gmail.com
 
+Project Link: [https://github.com/ainagh/midterm-project]
+https://github.com/ainagh/midterm-project
 Presentation Link: [Insert here your presentation link](insert-link-here)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
